@@ -1,0 +1,15 @@
+{
+  "name": "AvroMessage",
+  "type": "record",
+  "namespace": "org.acme.avro",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "message",
+      "type": "string"
+    }
+  ]
+}
