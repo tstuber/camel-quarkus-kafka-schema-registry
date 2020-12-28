@@ -24,11 +24,10 @@ public class KafkaRoute extends EndpointRouteBuilder {
             .log("String message received: ${body}");
 
 
+
         /**
          * Route to/from Kafka using avro deserialzer/serializer
          */
-
-        // 
         from(platformHttp("/avro").httpMethodRestrict("POST"))
             // unmashal json to pojo (based on generated code from message.avsc)
             .unmarshal().json(JsonLibrary.Jackson, AvroMessage.class)
