@@ -6,7 +6,7 @@ This example shows how camel-quarkus-kafka can be used in combination with confl
 * You need to have a local kafka cluster running. You can use the provided `docker-compose.yml`.
 * You need access to confluent.io maven repo: https://packages.confluent.io/maven/. You might need to add it to your `settings.xml`
 
-## Staring the sample
+## Starting the sample
 
 The example covers twice the same use case:
 * Invoke a local http endpoint with a json message. 
